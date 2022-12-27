@@ -7,7 +7,7 @@ def fun (list_):
     list2 = []
     mult = 1
     
-    for i in range(len(list_)//2 + len(list_)%2):
+    for i in range(len(list_)//2 + len(list_)%2):# или (len(list)+1)//2
         mult = list_[i] * list_[len(list_)-i-1]
         list2.append(mult)
     print(list2)
